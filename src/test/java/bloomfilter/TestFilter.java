@@ -13,8 +13,8 @@ public class TestFilter {
 
         bloomFilter.add(o1);
 
-        Assert.assertTrue(!bloomFilter.isNotInFilter(o1)); //always false
-        Assert.assertTrue(bloomFilter.isNotInFilter(o2));  //most of the times true
+        Assert.assertTrue(!bloomFilter.isNotInFilter(o1));
+        Assert.assertTrue(bloomFilter.isNotInFilter(o2));
     }
 
     @Test(invocationCount = 1_000)
@@ -25,8 +25,8 @@ public class TestFilter {
 
         bloomFilter.add(o1);
 
-        Assert.assertTrue(!bloomFilter.isNotInFilter(o1)); //always false
-        Assert.assertTrue(bloomFilter.isNotInFilter(o2));  //most of the times true
+        Assert.assertTrue(!bloomFilter.isNotInFilter(o1));
+        Assert.assertTrue(bloomFilter.isNotInFilter(o2));
     }
 
 
@@ -41,7 +41,7 @@ public class TestFilter {
             bloomFilter.add(new Object());
         }
 
-        Assert.assertTrue(!bloomFilter.isNotInFilter(o1)); //always false
-        Assert.assertTrue(bloomFilter.isNotInFilter(o2));  //most of the times true
+        Assert.assertTrue(!bloomFilter.isNotInFilter(o1));
+        Assert.assertTrue(bloomFilter.isNotInFilter(o2));
     }
 }
