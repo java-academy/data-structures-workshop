@@ -7,7 +7,7 @@ public class Trie {
 
     private char value;
 
-    Trie() {
+    public Trie() {
 
     }
 
@@ -16,11 +16,11 @@ public class Trie {
         return String.valueOf(value);
     }
 
-    void add(String word) {
+    public void add(String word) {
 
     }
 
-    List<Character> getPossibilities(String word) {
+    public List<Character> getPossibilities(String word) {
         return new ArrayList<>();
     }
 
