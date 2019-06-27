@@ -1,4 +1,4 @@
-#Warsztaty o BFS i DFS - poruszenie grafów, drzew i drzew binarnych.
+# Warsztaty o BFS i DFS - poruszenie grafów, drzew i drzew binarnych.
 
 **Zanim przejdziesz do dalszej części zapoznaj się z prezentacją dostępną w tym repozytorium.**
 
