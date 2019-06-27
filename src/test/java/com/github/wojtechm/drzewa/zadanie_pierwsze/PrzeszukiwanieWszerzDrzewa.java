@@ -34,6 +34,18 @@ public class PrzeszukiwanieWszerzDrzewa {
     }
 
     @Test
+    public void czyDziałaNaSchodkachDrzewie(){
+        // arrange
+        PrzeszukiwanieWszerz wszerz = new PrzeszukiwanieWszerz();
+        String oczekiwane = "[0, 1, 6, 3, 2, 4, 5]";
+        // act
+        String coDostałem = wszerz.czytajDrzewo(DrzewaDoTestowania.schodki);
+        // assert
+        assert oczekiwane.equals(coDostałem) : String.format(WIADOMOŚĆ, oczekiwane, coDostałem);
+    }
+
+
+    @Test
     public void czyZwracaPustąTablicęGdyKorzeńJestNullem() {
         // arrange
         PrzeszukiwanieWszerz wszerz = new PrzeszukiwanieWszerz();
